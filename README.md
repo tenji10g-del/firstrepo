@@ -1,6 +1,5 @@
-# firstrepo
+# project_python
 
 hello every one its me Tenji Sherpa.
 <br>
-I am beginner coder. 
-I recently 
+I am beginner coder.
