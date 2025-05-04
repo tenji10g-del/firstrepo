@@ -4,4 +4,7 @@
 <br>
 I am beginner coder.
 <hr>
-p{color:red;}
+<style>
+  p{color:red;}
+</style>
+
