@@ -4,7 +4,3 @@
 <br>
 I am beginner coder.
 <hr>
-<style>
-  p{color:red;}
-</style>
-
