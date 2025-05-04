@@ -1,6 +1,7 @@
 # project_python
 
-hello every one its me Tenji Sherpa.
+<p>hello every one its me Tenji Sherpa.</p>
 <br>
 I am beginner coder.
 <hr>
+p{color:red;}
