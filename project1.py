@@ -31,21 +31,36 @@
 # else:
 #     print(c)
 
+# #project4
+# num=int(input("enter number here:"))
+# reminder=  num % 7 
+# #condition 
+# if(reminder==0):
+#     print(num,"is multiple of 7")
+# else:
+#     print(num,"is not multiple of 7")
+
 #project4
+# movies=[]
+# movies.append(input("first movie:"))
+# movies.append(input("second movie:"))
+# movies.append(input("third movie:"))
+# print(movies)
 
-num=int(input("enter number here:"))
-reminder=  num % 7 
-#condition 
-if(reminder==0):
-    print(num,"is multiple of 7")
-else:
-    print(num,"is not multiple of 7")
+#testing palindrome of element
+# list1=[]
+# list1.append(input("enter first element:"))
+# list1.append(input("enter second element:"))
+# list1.append(input("enter third element:"))
+# copy1=list1.copy()
+# reverse1=copy1
+# if(list1==reverse1 ):
+#     print("elements are palindrome")
+# else:
+#     print("elements are not in palindrome")
 
 
-
-
-
-
-
-
-
+list2=[1,2,3]
+apple=list2.copy()
+apple.reverse()
+print(apple)
