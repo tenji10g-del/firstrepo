@@ -59,8 +59,37 @@
 # else:
 #     print("elements are not in palindrome")
 
+#project(while loop)
+# i=1
+# while i<=100:
+#     print(i)
+#     i+=1
 
-list2=[1,2,3]
-apple=list2.copy()
-apple.reverse()
-print(apple)
+#multiple table of x
+# x=int(input("enter number over here:"))
+# i=1
+# while i<=10:
+#     print(i*x)
+#     i+=1
+
+#finding element in list
+# roll=[1,2,3,4,5,2,5,2,6,7,4,54,32,56,32,56,32,]
+# b=int(input("enter number:"))
+# y=0
+# while y<len(roll):
+#     if(roll[y]==b):
+#         print("found at index",y)
+#     y+=1
+
+# number=[1,2,3,4,7,3,2,2,9,7,6,4]
+# idx=11
+# x=int(input("enter number:"))
+# for loop in number:
+#     if(loop==x):
+#         print("number available",idx)
+#     idx+=1
+
+## multipleusing(range)
+a=int(input("enter number:"))
+for num in range(1,10):
+    print(num,"*",a,"=",num*a)
