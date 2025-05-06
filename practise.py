@@ -15,5 +15,4 @@ if  x in list1:
     print("number found:")
 else:
     print("number not found")
-        
-    
+#for loop
