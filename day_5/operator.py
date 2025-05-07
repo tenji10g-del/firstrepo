@@ -46,6 +46,4 @@ print(fruit is plant)
 #id 
 print(id(fruit))
 print(id(plant))
-
-
  
