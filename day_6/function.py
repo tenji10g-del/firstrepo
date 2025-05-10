@@ -45,17 +45,3 @@
 #         return
 #     print(n)
 #     return
-def fibonacci(n):
-    if n <= 0:
-        return "Input should be a positive integer"
-    elif n == 1:
-        return [0]
-    elif n == 2:
-        return [0, 1]
-    else:
-        series = fibonacci(n - 1)
-        series.append(series[-1] + series[-2])
-        return series
-    
-a=fibonacci(10)
-print(a)

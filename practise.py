@@ -97,3 +97,28 @@
 # std1.get_avg()
 # std1.name="Tenji Sherpa"
 # std1.get_avg()
+
+class Student: 
+    school="Sagarmatha Secondary School"
+    def __init__(self,name, rollnumber , grade,age):
+        self.name=name 
+        self.rollnumber=rollnumber
+        self.grade=grade
+        self.age=age
+        print("welcome:",self.name) 
+        
+    def welcome(self):
+        print("Your information:")
+        std1=[f"name:{self.name}",f"roll number:{self.rollnumber}",f"grade:{self.grade}",f"age:{self.age}"]
+        for  info in std1:
+            print(info)
+    
+std= Student("Nima Rai",16,"eight",13)
+print(std.school)
+std.welcome()
+
+std2=Student("Anish BK",1,"six",14)
+std2.welcome()
+
+std3=Student("Roshan", 10,"Ten",15)
+std3.welcome()
