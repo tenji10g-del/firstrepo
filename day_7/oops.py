@@ -77,22 +77,21 @@
 # print(e1._age)
 # print(e1.dispalyEmployee)
 
-class Duck:
-    def sound(self):
-        return "Quack, Quack!"
-    
-class AnotherBird:
-    def sound(self):
-        return "I am similar to a duck "
+#types_of_attributes
 
-def makesound(duck):
-    print(duck.sound())  
+class Pen: 
+    location= "india"  #class attribute
+    def __init__(self, name , type , model):
+        self.name=name #object attrubue 
+        self.type=type #object attribute 
+        self.model=model #object attribute
+    def Quality(self):
+        return f"This is A 1 quality pen in nepal as far we know."
 
-duck=Duck()
-anotherbird= AnotherBird() 
+p1=Pen("technotip","blue", "techno")
+print(p1.location)
+print(p1.Quality())
 
-makesound(duck)
-makesound(anotherbird)
 
 
 
