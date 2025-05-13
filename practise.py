@@ -98,27 +98,124 @@
 # std1.name="Tenji Sherpa"
 # std1.get_avg()
 
-class Student: 
-    school="Sagarmatha Secondary School"
-    def __init__(self,name, rollnumber , grade,age):
-        self.name=name 
-        self.rollnumber=rollnumber
-        self.grade=grade
-        self.age=age
-        print("welcome:",self.name) 
+# class Student: 
+#     school="Sagarmatha Secondary School"
+#     def __init__(self,name, rollnumber , grade,age):
+#         self.name=name 
+#         self.rollnumber=rollnumber
+#         self.grade=grade
+#         self.age=age
+#         print("welcome:",self.name) 
         
-    def welcome(self):
-        print("Your information:")
-        std1=[f"name:{self.name}",f"roll number:{self.rollnumber}",f"grade:{self.grade}",f"age:{self.age}"]
-        for  info in std1:
-            print(info)
+#     def welcome(self):
+#         print("Your information:")
+#         std1=[f"name:{self.name}",f"roll number:{self.rollnumber}",f"grade:{self.grade}",f"age:{self.age}"]
+#         for  info in std1:
+#             print(info)
     
-std= Student("Nima Rai",16,"eight",13)
-print(std.school)
-std.welcome()
+# std= Student("Nima Rai",16,"eight",13)
+# print(std.school)
+# std.welcome()
 
-std2=Student("Anish BK",1,"six",14)
-std2.welcome()
+# std2=Student("Anish BK",1,"six",14)
+# std2.welcome()
 
-std3=Student("Roshan", 10,"Ten",15)
-std3.welcome()
+# std3=Student("Roshan", 10,"Ten",15)
+# std3.welcome()
+
+#static_method
+# class student:
+#     @staticmethod
+#     def school(): 
+#         print ("sagarmatha secondary school")
+   
+#     def __init__(self,name,address):
+#         self.name=name 
+#         self.address=address 
+#     def welcome(self):
+#         print(f"wel-come!{self.name}", f"your location is {self.address}" )
+
+# std=student("Tenji Sherpa","phaplu")
+# std.school()
+# std.welcome()
+
+#project_based_on_oops 
+# class Account:
+#     def __init__(self,balance,amt):
+#         self.balance=balance 
+#         self.amt=amt 
+    
+#     def debit(self,amount):
+#         self.balance -= amount
+#         print(f"amount{amount} is debited")
+#         print("your current amount is",self.get_balance())
+
+#     def credit(self,amount):
+#         self.balance += amount
+#         print(f"anount {amount} is credited to you account")
+#         print("your current amount is",self.get_balance())
+#     def get_balance(self):
+#         return self.balance
+# account1=Account(1000,1012)
+# print(account1.balance)
+# account1.debit(1000)
+# account1.credit(100)
+# print(account1.balance)
+
+#project_for_oops 
+# class Account: 
+#     def __init__(self,acc_num,bal):
+#         self.account=acc_num
+#         self.bal=bal
+    
+#     def debit(self,amount):
+#         self.bal-=amount
+#         print (amount,"is debited from  you account")
+#         print ("Now your total balance is",self.get_bal())
+    
+#     def credit(self,amount):
+#         self.bal+=amount
+#         print(amount,"is credited to you account ")
+#         print ("Now your total balance is",self.get_bal())
+#     def get_bal(self):
+#         return self.bal
+
+# account1=Account(1012,12000)
+# account1.debit(1000)
+# account1.credit(2000)
+
+class Subject:
+    def __init__(self,type,name): 
+        self.type=type 
+        self.name=name 
+    def __info(self):
+         x = [f"type: {self.type}", f"name: {self.name}"]
+         for about in x:
+            print(about)
+    def  detail(self):
+        print("hi! your information....")
+        print(self.__info())
+
+    def display(self):
+        self.detail()
+
+sub1=Subject("Maths","compulsary")
+sub1.display()
+# class Subject:
+#     def __init__(self, type, name): 
+#         self.type = type 
+#         self.name = name 
+
+#     def _info(self):  # Changed from __info to _info
+#         return [f"type: {self.type}", f"name: {self.name}"]
+
+#     def detail(self): 
+#         print("Hi! Your information....") 
+#         print("\n".join(self._info()))  # Calling the method correctly
+
+#     def display(self): 
+#          print(self.detail())  # Avoiding recursion error
+
+# # Creating an instance
+# sub1 = Subject("Maths", "Compulsory")
+# sub1.display()  
