@@ -17,7 +17,6 @@ class Manager(Person, Employee):
     def __init__(self, name, employee_id, department):
         super().__init__(name)  
         super().__init__(employee_id)
-         
         self.department = department
 
     def show_detail(self):

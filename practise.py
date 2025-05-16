@@ -184,23 +184,24 @@
 # account1.debit(1000)
 # account1.credit(2000)
 
-class Subject:
-    def __init__(self,type,name): 
-        self.type=type 
-        self.name=name 
-    def __info(self):
-         x = [f"type: {self.type}", f"name: {self.name}"]
-         for about in x:
-            print(about)
-    def  detail(self):
-        print("hi! your information....")
-        print(self.__info())
+# class Subject:
+#     def __init__(self,type,name): 
+#         self.type=type 
+#         self.name=name 
+#     def __info(self):
+#          x = [f"type: {self.type}", f"name: {self.name}"]
+#          for about in x:
+#             print(about)
+#     def  detail(self):
+#         print("hi! your information....")
+#         print(self.__info())
 
-    def display(self):
-        self.detail()
+#     def display(self):
+#         self.detail()
 
-sub1=Subject("Maths","compulsary")
-sub1.display()
+# sub1=Subject("Maths","compulsary")
+# sub1.display()
+
 # class Subject:
 #     def __init__(self, type, name): 
 #         self.type = type 
@@ -219,3 +220,52 @@ sub1.display()
 # # Creating an instance
 # sub1 = Subject("Maths", "Compulsory")
 # sub1.display()  
+
+
+# from abc import ABC , abstractmethod
+
+# class vehicle(ABC):
+#     @abstractmethod
+#     def start_engine(self):
+#         pass 
+#     @abstractmethod 
+#     def stop_engine (self):
+#         pass
+# class Car(vehicle):
+#     def start_engine(self):
+#         print("car engine started")
+#     def stop_engine(self):
+#         print("car engine stop")
+# from abc import ABC, abstractmethod 
+# class Animal(ABC):
+#     @property
+#     @abstractmethod
+#     def sound(self):
+#         pass 
+# class Bird(Animal):
+#     @property
+#     def sound(self):
+#         return "chirp"
+# bird=Bird()
+# print(bird.sound)
+def my_function(x):
+    print("line2")
+    print("The number is=",x)
+def my_decorator(some_function,num):
+    print("line6")
+    def wrapper(num):
+        print("line8")
+        print("Inside wraper to check odd/even")
+        if num%2==0:
+            ret="even"
+        else:
+            ret="odd"
+        print("line14")
+        some_function(num)
+        print("line16")
+        return ret 
+    print("wrapper function is called")
+    return wrapper
+no=10
+my_function =my_decorator(my_function, no )
+print ("it is", my_function(no))
