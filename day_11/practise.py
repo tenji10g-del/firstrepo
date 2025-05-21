@@ -22,7 +22,3 @@
 # print(circle.perimeter())
 # 
 
-number=[1,2,3,4,5,6]
-for x in number:
-    a=x[2]
-    print(a)

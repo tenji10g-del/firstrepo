@@ -248,24 +248,97 @@
 #         return "chirp"
 # bird=Bird()
 # print(bird.sound)
-def my_function(x):
-    print("line2")
-    print("The number is=",x)
-def my_decorator(some_function,num):
-    print("line6")
-    def wrapper(num):
-        print("line8")
-        print("Inside wraper to check odd/even")
-        if num%2==0:
-            ret="even"
-        else:
-            ret="odd"
-        print("line14")
-        some_function(num)
-        print("line16")
-        return ret 
-    print("wrapper function is called")
-    return wrapper
-no=10
-my_function =my_decorator(my_function, no )
-print ("it is", my_function(no))
+# def my_function(x):
+#     print("line2")
+#     print("The number is=",x)
+# def my_decorator(some_function,num):
+#     print("line6")
+#     def wrapper(num):
+#         print("line8")
+#         print("Inside wraper to check odd/even")
+#         if num%2==0:
+#             ret="even"
+#         else:
+#             ret="odd"
+#         print("line14")
+#         some_function(num)
+#         print("line16")
+#         return ret 
+#     print("wrapper function is called")
+#     return wrapper
+# no=10
+# my_function =my_decorator(my_function, no )
+# print ("it is", my_function(no))
+
+#project_cafe
+
+#define the menu of resturant.
+# name=input("please enter your name:")
+
+# items={"pizza":550, "salt tea":30, "cold drink":100, "coffee":50}
+# print(items)
+
+# #greet 
+# print("welcome to our cafe Mr.",name)
+# print("pizza:550\nsalt tea:30\ncold drink:100\ncoffee:50",)
+
+# order_total=0
+
+# item_1= input("Enter you first order:")
+# if item_1 in items:
+#     order_total+=items[item_1]
+#     print(f"you item {item_1} has been added")
+# else:
+#     print(f"{item_1} is not available is our hotel")
+
+# another_order= input("do you want to add another item? (yes/no)")
+# if another_order=="yes":
+#     item_2= input("enter the name of your second item:")
+#     if item_2 in items:
+#         order_total+= items[item_2]
+#         print(f"item has been added to your order")
+#     else:
+#         print(f"sorry {item_2}, is not available here")
+
+# print(f"Total amount to pay for your order {order_total}")
+
+
+
+# set1={1:{"name":"Tenji", "age":18, "cls":10},
+#       2:{"name":"Tenji", "age":18, "cls":10},
+#       3:{"name":"Tenji", "age":18, "cls":10}}
+# for c in set1[2]: 
+#     print(c)
+
+#project_calculator
+
+#this is project to divide total expense to the number of people 
+# def house_rent():
+#       rent=int(input("enter total rent here:"))
+#       electricity=int(input("enter electricity consumption:"))
+#       electricity_rate=int(input("enter electricity rate per unit:"))
+#       electricity_charge=electricity*electricity_rate
+#       food=int(input("enter total food expences:"))
+#       people=int(input("number of people:"))
+
+
+#       total_expenses= rent+electricity_charge+food
+#       division=total_expenses/people
+
+#       print(f"each will pay {division} ")
+#       print("thank you!")
+
+# house_rent()
+
+#scissor_papper_game
+
+set1={"scissor","papper", "rock"}
+my_list=list(set1)
+computer=(my_list[0])
+man=input("enter your move:")
+
+if man==computer:
+    print("with draw")
+else:
+    print("you win")
+

@@ -64,9 +64,11 @@
 
 # print(fact(5))
 
-def sum(n):
-    if(n==0):
-        return 0
-    return sum(n-1)+n
-calc=sum(4)
-print(calc)
+#sum of first natural number
+# def sum(n):
+#     if(n==0):
+#         return 0
+#     return sum(n-1)+n
+# calc=sum(4)
+# print(calc)
+
