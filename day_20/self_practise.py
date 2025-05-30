@@ -26,7 +26,7 @@
 
 Farmer={1:"nima", 2:"ram", 3:"sita"}
 Farmer[1]="Dawa"
-farmer_shallow_copy= Farmer.copy.copy()
+farmer_shallow_copy= Farmer.copy()
 print("shallow copy before editing:",farmer_shallow_copy)
 farmer_shallow_copy[5]="pukar"
 print("Shallow copy ager editing:", farmer_shallow_copy)
